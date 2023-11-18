@@ -1,0 +1,4 @@
+baseURL = 'https://til.nabarun.dev/'
+languageCode = 'en-us'
+title = 'Today I Learnt'
+theme = 'paper'
