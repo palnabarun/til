@@ -1,0 +1,21 @@
+#static/admin/config.yml
+
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "static/images"
+public_folder: "images"
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    path: "{{slug}}/index"
+    media_folder: ""
+    public_folder: ""
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Tags", name: "tags", widget: "list", summary: "{{fields.tag}}", field: { label: "Tag", name: "tag", widget: "string" }} # https://github.com/decaporg/decap-cms/issues/4646
+      - { label: "Body", name: "body", widget: "markdown", hint: "Make sure to name added image as thumbnail" }
