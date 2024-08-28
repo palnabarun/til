@@ -1,6 +1,6 @@
 ---
 title: Long term learnings
-date: 2024-08-28T11:10:00.000Z
+date: 2024-08-28T00:00:00.000Z
 ---
 _[til.nabarun.dev](https://til.nabarun.dev)_ started as a running log of what I learned daily. I _thought_ I could post freely on new learning every day.
 
